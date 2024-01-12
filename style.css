@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     background-color: black;
     color: whitesmoke;
@@ -31,16 +30,19 @@ body{
     font-size: 36px;
     font-family: 'Krona One', sans-serif;
 }
+.apresentacao__conteudo__subtitulo{ /*div subtitulo*/
+    display: flex;
+    margin-top: 20px;
+}
 .apresentacao__conteudo__texto{ /*subtitulo*/
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
 }
-.apresentacao__links{ /*div*/
+.apresentacao__links{ /*div botao*/
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
-
 .apresentacao__links__link:link, .apresentacao__links__link:visited { /*estilizacao do botao*/
     background-color:#2bb8d8;
     width: 280px;
@@ -53,7 +55,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-
 .apresentacao__links__link:hover, .apresentacao__links__link:active { /*interação do botao*/
     background-color:#073c47;
     color: white;
