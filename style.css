@@ -16,7 +16,7 @@ body{
     color: whitesmoke;
 }
 .titulo{ /*cor titulo*/
-    color:#22D4FD;
+    color:#2bb8d8;
 }
 .apresentacao { /* Main */
     margin: 10%;
@@ -42,7 +42,7 @@ body{
 }
 
 .apresentacao__links__link:link, .apresentacao__links__link:visited { /*estilizacao do botao*/
-    background-color:#22D4FD;
+    background-color:#2bb8d8;
     width: 280px;
     text-align: center;
     border-radius: 16px;
