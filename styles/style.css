@@ -19,6 +19,10 @@
     margin: 0;
     padding: 0;
 }
+.imagem{
+    border-radius: 50%;
+    width: 40%;
+}
 body{
     box-sizing: border-box;
     background-color: var(--cor-primaria);
@@ -32,7 +36,7 @@ body{
     gap: 80px; /*espacamento do menu de nav*/
 }
 .cabecalho__menu__link:link, .cabecalho__menu__link:visited{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     font-weight: 600;
     color: var(--cor-terciaria);
@@ -46,13 +50,14 @@ body{
     padding: 5% 15% ;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+    gap: 82px; 
 }
 .apresentacao__conteudo{ /*Largura dos Itens da Pagina*/
-    width: 615px; 
+    width: 50%; 
 }
-.apresentacao__conteudo__titulo{ /*titulo*/
-    font-size: 36px;
+.apresentacao__conteudo__titulo{ /*1 rem = 16px*/
+    font-size: 2.25rem; 
     font-family: var(--fonte-primaria);
 }
 .titulo{ /*cor titulo*/
@@ -63,7 +68,7 @@ body{
     margin-top: 10px; /* Aplica uma margem do conteúdo acima*/
 }
 .apresentacao__conteudo__texto{ /*subtitulo*/
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 .apresentacao__links{ /*div - do texto pra baixo*/
@@ -77,13 +82,13 @@ body{
 .apresentacao__links__subtitulo{
    font-family: var(--fonte-primaria); 
    font-weight: 400;
-   font-size: 22px;
+   font-size: 1.5rem;
 }
-.apresentacao__links__link:link, .apresentacao__links__link:visited { /*estilizacao do botao*/
+.apresentacao__links__navegacao:link, .apresentacao__links__navegacao:visited { /*estilizacao do botao*/
     display: flex; /* Por padrão alinha o conteudo à esquerda*/
     justify-content: center; /* Alinha o conteudo no centro*/
     gap: 16px;   /* Espaçamento dentro dos botoes*/
-    width: 378px;
+    width: 55%;
     text-align: center;
     border-radius: 8px; /* Contorno do botão*/
     color: var(--cor-secundaria);
@@ -95,7 +100,7 @@ body{
     border: 2px solid var(--cor-terciaria);
     transition: 1s;
 }
-.apresentacao__links__link:hover, .apresentacao__links__link:active { /*Mouse em cima*/
+.apresentacao__links__navegacao:hover, .apresentacao__links__navegacao:active { /*Mouse em cima*/
     background-color: var(--cor-hover);
     color: var(--cor-primaria);
     padding: 5%;
@@ -109,21 +114,31 @@ body{
     font-family: var(--fonte-secundaria);
 
 }
-.imagem{
-    border-radius: 50%;
-}
 
+/*Pagina Sobre Mim*/
 
 .apresentacao__sobremim{ /*section*/
     width: 600px;
 }
 .apresentacao__sobremim__texto{ /*paragrafos*/
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     margin-top: 15px;
 }
 .apresentacao__sobremim__titulo{ /*titulo*/
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
     color: var(--cor-terciaria);
+}
+
+@media (max-width: 1030px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
 }
