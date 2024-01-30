@@ -170,6 +170,21 @@ body{
     }
     .apresentacao__links__navegacao:link, .apresentacao__links__navegacao:visited {
         padding: 10px 0;
+    }        
+    /*Sobre mim*/
+    .apresentacao__sobremim{
+        justify-content: center;
+        width: auto;
+    }
+    .apresentacao__sobremim__titulo{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: -25px;
 
+    }
+    .apresentacao__sobremim__texto{
+        font-size: 1.1rem;
+        text-align: center;
+    }
 }
 }
